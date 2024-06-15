@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Formula E;
+    src: url(../assets/Formula\ E\ Title.ttf);
+  }
+* {
+    font-family: Formula E;
+}
+
+header {
+    background-color: #011AFE; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header span{
+    width: 250px;
+}
+
+#logo{
+    width: 250px;
+    margin-top: -1rem;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff; 
+}
