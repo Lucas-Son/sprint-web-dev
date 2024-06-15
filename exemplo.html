@@ -1,60 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Outra Página</title>
-    <style>
-        body {
-            background-color: #000000; 
-            color: #ffffff; 
-            font-family: Arial, sans-serif; 
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+    <link rel="stylesheet" href="./styles/exemplo.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo da Formula E" id="logo" />
+      <h1>Compartilhe e ganhe Recompensas</h1>
+      <span></span>
+    </header>
+    <main>
+      <a href="index.html">Voltar para a página inicial</a>
+      <h3>Abaixo você pode ver algumas páginas do futuro projeto!</h3>
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="./assets/proto.png" alt="Tela de login" />
+        </div>
+        <div class="slide fade">
+          <img src="./assets/proto2.png" alt="Tela sobre o usuário" />
+        </div>
+        <div class="slide fade">
+          <img src="./assets/proto3.png" alt="Próxima corrida" />
+        </div>
+        <div class="slide fade">
+          <img src="./assets/proto4.png" alt="Compartilhamento" />
+        </div>
 
-        header {
-            background-color: #011AFE; 
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            position: fixed;
-            top: 0;
-        }
 
-        header h1 {
-            margin: 0;
-            color: #ffffff; 
-        }
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
 
-        main {
-            text-align: center;
-            margin-top: 100px; 
-        }
-
-        main img {
-            max-width: 100%; 
-            display: block; 
-            margin: 0 auto; 
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Bem-vindo à Outra Página</h1>
-</header>
-
-<main>
-    <p>Esta é outra página de exemplo.</p>
-    <img src="/Captura de tela 2024-06-15 231403.png" alt="Descrição da imagem">
-    <a href="index.html">Voltar para a página inicial</a>
-</main>
-
-</body>
+      <!-- Pontos de navegação -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </main>
+    <script src="./carrossel.js"></script>
+  </body>
 </html>
