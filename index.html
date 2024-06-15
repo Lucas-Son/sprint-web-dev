@@ -19,12 +19,29 @@
         }
 
         
-        main {
+        header {
+            background-color: #011AFE; 
+            width: 100%;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffffff; 
         }
 
         
-        h1, h2, h3, h4, h5, h6 {
+        main {
+            text-align: center;
+            margin-top: 100px; 
+        }
+
+        
+        h2, h3, h4, h5, h6 {
             color: #ffffff;
         }
 
@@ -57,8 +74,12 @@
 </head>
 <body>
 
+<header>
+    <h1>Compartilhe e ganhe Recompensas</h1>
+</header>
+
 <main>
-    <h1>Compartilhar nas Redes Sociais</h1>
+    <h2>Compartilhar nas Redes Sociais</h2>
     <button onclick="shareFacebook()">Compartilhar no Facebook</button>
     <button onclick="shareTwitter()">Compartilhar no Twitter</button>
     <br>
