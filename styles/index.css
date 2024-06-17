@@ -3,22 +3,87 @@
 body {
     background-color: #000000; 
     color: #ffffff; 
-    font-family: Arial, sans-serif; 
-    margin: 0 auto;
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
     padding: 0;
     line-height: 1.6;
     min-height: 100vh;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: -5rem;
-    min-height: calc(100vh - 5rem);
+}
+
+.primeira {
+    background-color: #011AFE;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    padding: 0;
     text-align: center;
+    padding-bottom: 2rem;
+}
+
+.primeira h1 {
+    font-family: 'Formula E', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.principal {
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+section h1 {
+    font-family: 'Formula E', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin: 0 0 20px;
+}
+
+section .content {
+    max-width: 800px;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ranks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ranks img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.compartilhar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -32,21 +97,42 @@ p {
 a {
     color: #1e90ff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #87ceeb;
     text-decoration: underline;
 }
 
 button {
-    background: #444444;
+    background: #1e90ff;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #555555;
+    background: #63b8ff;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .ranks {
+        flex-direction: column;
+    }
 }
