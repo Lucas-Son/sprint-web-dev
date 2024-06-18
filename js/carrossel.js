@@ -1,4 +1,9 @@
 // scripts.js
+
+if(localStorage.getItem("logado") != "true") {
+    window.location.href = "login.html";
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
