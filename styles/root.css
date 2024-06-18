@@ -47,3 +47,30 @@ header nav ul li a {
     width: 250px;
     margin-top: -1rem;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #011AFE;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #011AFE;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+}

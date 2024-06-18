@@ -34,15 +34,32 @@ main {
 
 .principal {
     flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 section {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 75%;
     justify-content: space-between;
     margin-bottom: 2rem;
     padding: 2rem;
+}
+
+.ecoins img{
+    padding-right: 5%;
+}
+
+.ranks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.ranks img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 section h1 {
@@ -66,13 +83,6 @@ section img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.ranks {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 .ranks img {
     width: 150px;
     border-radius: 10px;
@@ -86,13 +96,21 @@ section img {
     margin-top: 2rem;
 }
 
+.rewards img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.rewards img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-p {
-    margin: 0 0 20px;
-}
+
 
 a {
     color: #1e90ff;
@@ -126,13 +144,22 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+
+    main {
+        padding: 0;
     }
 
-    .ranks {
-        flex-direction: column;
+    .primeira {
+        padding: 0;
     }
+
+    section {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    section img {
+        margin-top: 1rem;
+    }
+
 }

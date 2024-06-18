@@ -1,105 +1,89 @@
-        header {
-            align-items: center;
-        }
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-        }
-        
-        section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 150px;
-        }
-        
-        div {
-            align-items: center;
-        }
-        
-        h1 {
-            margin-left: 30px;
-        }
-        
-        .centro {
-            height: 350px;
-            width: 500px;
-            margin-top: 200px;
-            margin-left: 35%;
-            background-color: #011AFE;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            border-radius: 20px;
-        }
-        
-        .centro form {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        /* inputs */
-        
-        .usuario-input {
-            height: 30px;
-            width: 230px;
-            border: 1px solid black;
-            border-radius: 5px;
-            font-size: 14px;
-            padding: 12px;
-        }
-        
-        .senha-input {
-            height: 30px;
-            width: 230px;
-            border: 1px solid black;
-            border-radius: 5px;
-            font-size: 14px;
-            padding: 12px;
-        }
-        
-        form button {
-            border: none;
-            width: 140px;
-            height: 35px;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-        
-        button:hover {
-            background-color: #000000;
-            transition: .2s;
-            cursor: pointer;
-        }
-        
-        footer {
-            position: fixed;
-        }
-        
-        .navbar {
-            background-color: #161616;
-        }
-        
-        .navbar-brand {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        .nav-link {
-            color: #fff;
-            font-weight: bold;
-        }
-        
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 1rem;
-            background-color: #0e0d0d;
-            color: #fff;
-            bottom: 0;
-        }
+@import url('./root.css');
+
+body {
+    background-color: #000000; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 13.6rem);
+    padding: 2rem;
+}
+
+.centro {
+    background-color: #011AFE;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.centro h1 {
+    font-family: 'Formula E', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#username, #password {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #63b8ff;
+}
+
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .centro {
+        width: 90%;
+    }
+
+    .input-group {
+        max-width: 90%;
+    }
+}
